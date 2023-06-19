@@ -1,0 +1,10 @@
+uuid: 21501575-1122-41ec-afeb-cf3a7410b3ef
+langcode: en
+status: true
+dependencies: {  }
+id: home_banner
+label: 'Home Banner'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

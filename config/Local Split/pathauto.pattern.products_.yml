@@ -1,0 +1,22 @@
+uuid: ceabc1a1-4685-490f-a9c4-adf8862ac083
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: products_
+label: 'Products URL'
+type: 'canonical_entities:node'
+pattern: 'products/[node:title]'
+selection_criteria:
+  67d7490b-c735-46b9-86ee-ae4686ba0a2d:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 67d7490b-c735-46b9-86ee-ae4686ba0a2d
+    context_mapping:
+      node: node
+    bundles:
+      products: products
+selection_logic: and
+weight: -5
+relationships: {  }

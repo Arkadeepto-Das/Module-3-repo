@@ -1,0 +1,25 @@
+uuid: 65054943-d731-4967-9d59-a7f80b212b94
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:5cda4892-3e4b-4188-a27c-d43e21cd46e5'
+  module:
+    - block_content
+  theme:
+    - olivero
+id: contactinfo
+theme: olivero
+region: footer_top
+weight: 0
+provider: null
+plugin: 'block_content:5cda4892-3e4b-4188-a27c-d43e21cd46e5'
+settings:
+  id: 'block_content:5cda4892-3e4b-4188-a27c-d43e21cd46e5'
+  label: 'Contact Info'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

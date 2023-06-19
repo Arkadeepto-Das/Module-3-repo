@@ -1,0 +1,134 @@
+uuid: 771aeb14-436b-44d2-9f28-6ce192ee0b56
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.news.field_body
+    - field.field.node.news.field_image
+    - field.field.node.news.field_product_type
+    - node.type.news
+  module:
+    - layout_builder
+    - layout_discovery
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          05e4a8bf-8cf4-4060-81c6-68c298a61a97:
+            uuid: 05e4a8bf-8cf4-4060-81c6-68c298a61a97
+            region: content
+            configuration:
+              id: 'field_block:node:news:field_image'
+              label: Image
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: thumbnail
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          81e0414e-508b-4136-8639-b21b73bef729:
+            uuid: 81e0414e-508b-4136-8639-b21b73bef729
+            region: content
+            configuration:
+              id: 'field_block:node:news:title'
+              label: Title
+              label_display: visible
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          db21b432-83d9-40de-bced-593c7663ec0c:
+            uuid: db21b432-83d9-40de-bced-593c7663ec0c
+            region: content
+            configuration:
+              id: 'field_block:node:news:field_body'
+              label: Body
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_trimmed
+                label: hidden
+                settings:
+                  trim_length: 50
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          c5c5d877-0b7b-407a-b4de-992cc2e88b60:
+            uuid: c5c5d877-0b7b-407a-b4de-992cc2e88b60
+            region: content
+            configuration:
+              id: 'field_block:node:news:field_product_type'
+              label: 'Product Type'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          5c18fd5a-cd86-4e7a-a45a-ebdeccf3582a:
+            uuid: 5c18fd5a-cd86-4e7a-a45a-ebdeccf3582a
+            region: content
+            configuration:
+              id: 'extra_field_block:node:news:links'
+              label: Links
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                settings: {  }
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+        third_party_settings: {  }
+id: node.news.teaser
+targetEntityType: node
+bundle: news
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_body: true
+  field_image: true
+  field_product_type: true

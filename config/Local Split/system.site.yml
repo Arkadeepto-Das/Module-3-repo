@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: en
+uuid: a01b1fae-698d-4fe1-9ba3-7ab5ebda7f9c
+name: 'Innoraft Employee Management Portal'
+mail: ark.das270601@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/301
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
